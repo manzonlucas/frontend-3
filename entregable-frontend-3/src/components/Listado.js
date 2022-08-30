@@ -1,16 +1,31 @@
-import React from 'react'
+// DIGITAL HOUSE CERTIFIED TECH DEVELOPER 
+// FRONTEND III 29/08/2022 
+// ENTREGABLE DE LUCAS MANZÓN
 
-// Debemos importar el listado de objetos del archivo JSON para usarlos como array a la hora de crear cada Item.
-// El componente Listado es el padre de:
-// - varios Item
-// ESTADO: Listado no necesita manejar un estado.
-// MÉTODOS: Listado no requiere de métodos.
-// PROPS: Listado recibe el método para aumentar el estado de App y se lo pasa a cada uno de sus hijos.
+import React from 'react';
+import data from './data.json';
+import Item from './Item';
 
-export default function Listado() {
+// OK Debemos importar el listado de objetos del archivo JSON para usarlos como array a la hora de crear cada Item.
+// OK El componente Listado es el padre de:
+// OK - varios Item
+// OK ESTADO: Listado no necesita manejar un estado.
+// OK MÉTODOS: Listado no requiere de métodos.
+// OK PROPS: Listado recibe el método para aumentar el estado de App y se lo pasa a cada uno de sus hijos.
+
+export default function Listado(props) {
+
   return (
     <div className='container'>
-      {/* renderizamos los Item aquí */}
+      {data.map((item, index) => {
+        return (
+          <Item
+            key={index}
+            itemData={item}
+            comprarItem={props.comprarItem}
+          />
+        )
+      })}
     </div>
   )
 }

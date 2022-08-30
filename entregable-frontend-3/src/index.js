@@ -1,3 +1,7 @@
+// DIGITAL HOUSE CERTIFIED TECH DEVELOPER 
+// FRONTEND III 29/08/2022 
+// ENTREGABLE DE LUCAS MANZÓN
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
