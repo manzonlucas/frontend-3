@@ -19,7 +19,7 @@ export default function Cabecera(props) {
       <h1></h1>
       <p>
         <span>
-          Cantidad total de items en el carrito: {props.stock}
+          Cantidad de items en el carrito: {props.stock}
         </span>
       </p>
     </header>

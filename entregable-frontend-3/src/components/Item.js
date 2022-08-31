@@ -35,9 +35,7 @@ export default function Item(props) {
       <h3>{props.itemData.producto.nombre}</h3>
       <p>{props.itemData.producto.descripcion}</p>
       <h5>
-        <span>
-          {stock > 0 ? stock : 'Agotado'}
-        </span>
+        Stock: {stock > 0 ? <b>{stock}</b> : <span>AGOTADO</span>}
       </h5>
       <button onClick={handleClick}>
         {stock > 0 ? 'Comprar' : 'Sin stock'}
