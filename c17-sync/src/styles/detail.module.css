@@ -1,0 +1,21 @@
+.name {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.dataContainer {
+  display: flex;
+  border: 3px solid white;
+}
+
+.data {
+  color: white;
+  font-size: 2rem;
+  margin-left: 300px;
+}
+
+.image {
+  margin: 50px 300px;
+  border-radius: 50%;
+}
