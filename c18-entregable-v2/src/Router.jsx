@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import App from './App';
+import Tienda from './components/Tienda';
 import Layout from './components/Layout';
 import Home from './components/Home';
 
@@ -11,7 +11,7 @@ export default function Router() {
         <Routes>
           <Route element={<Layout />}>
             <Route index element={<Home />}></Route>
-            <Route path='/tienda' element={<App />}></Route>
+            <Route path='/tienda' element={<Tienda />}></Route>
           </Route>
 
 

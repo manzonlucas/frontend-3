@@ -3,8 +3,8 @@
 // ENTREGABLE DE LUCAS MANZÓN
 
 import { useState } from 'react';
-import Cabecera from './components/Cabecera.js'
-import Listado from './components/Listado.js'
+import Cabecera from './Cabecera.js'
+import Listado from './Listado.js'
 
 // El componente App es el padre de:
 // - Cabecera
@@ -13,7 +13,7 @@ import Listado from './components/Listado.js'
 // OK MÉTODOS: App debe tener un método para aumentar este número y que pueda ser ejecutado por su nieto Item.
 // OK PROPS: App deberá pasar por props lo necesario a sus componenetes internos.
 
-function App() {
+export default function Tienda() {
 
   const [stock, setStock] = useState(0);
 
@@ -28,5 +28,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

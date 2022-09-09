@@ -3,10 +3,13 @@ import { Link, Outlet } from 'react-router-dom';
 export default function Layout() {
   return (
     <>
-      <div style={{ display: 'flex', justifyContent: 'space-around', border: "2px solid black", width: '50%', margin:'auto' }}>
+      <header id='mainHeader'>
+        <h1>DH Sport Store</h1>
+      </header>
+      <nav>
         <Link to={'/'}>Home</Link>
         <Link to={'/tienda'}>Tienda</Link>
-      </div>
+      </nav>
       <Outlet />
     </>
   )

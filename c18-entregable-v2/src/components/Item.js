@@ -34,6 +34,8 @@ export default function Item(props) {
     <div className='producto'>
       <h3>{props.itemData.producto.nombre}</h3>
       <p>{props.itemData.producto.descripcion}</p>
+      <img src={props.itemData.producto.imagen} style={{ height: '200px' }} alt="" />
+
       <h5>
         Stock: {stock > 0 ? <b>{stock}</b> : <span>AGOTADO</span>}
       </h5>
