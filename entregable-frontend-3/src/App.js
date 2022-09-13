@@ -18,14 +18,17 @@ function App() {
   const [stock, setStock] = useState(0);
 
   function comprarItem() {
-    setStock(stock  + 1);
+    setStock(stock + 1);
   }
 
   return (
-    <div className="App">
-      <Cabecera stock={stock} />
-      <Listado comprarItem={comprarItem}/>
-    </div>
+    <>
+      <div className="App">
+        <Cabecera stock={stock} />
+        <Listado comprarItem={comprarItem} />
+      </div>
+
+    </>
   );
 }
 
